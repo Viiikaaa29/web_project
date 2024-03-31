@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="contactt.css">
+</head>
+<body>
+    <header class="navigation">
+        <div class="nav-holder js-nav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="colorokorektion.html">Кольорокорекція</a></li>
+                    <li class="nav-item"><a href="retush.html">Ретушування</a></li>
+                    <li class="nav-item"><a href="tonuvan.html">Тонування</a></li>
+                    <li class="nav-item"><a href="index.html">Головна</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <div class="teext">
+    <h1 style="border:2px solid Tomato;">Мельник Вікторія</h1>
+</div>
+    <h2>Ви можете знайти мене в інстаграмі, а також за номером телефон:</h2>
+    <div class="insa">
+        <p><b><a href="https://www.instagram.com/1__.vikusik.__4?igsh=MWVpazhvenp0dXVqOA==" target="_blank">INSTAGRAM</a></b></p>
+    </div>    
+    <p class="phone-number" onclick="openContactModal()">0685123495</p>
+    <div class="foto-me">
+        <img src="img/photo_2024-03-03_22-51-18.jpg" alt="me1" width="370" height="500" class="left-photo">
+        <img src="img/photo_2023-03-07_12-08-59.jpg" alt="me" width="370" height="500" class="right-photo">
+    </div>
+    <div id="contact-modal">
+        <div class="modal-content">
+            <span id="close-modal" onclick="closeContactModal()">X</span>
+            <p>Зателефонуйте або напишіть:</p>
+            <a href="tel:0685123495">Телефонувати</a>
+            <a href="mailto:millervika451@gmail.com">Написати</a>
+        </div>
+    </div>
+
+    <script>
+        function openContactModal() {
+            document.getElementById('contact-modal').style.display = 'flex';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contact-modal').style.display = 'none';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Мій Фотоблог. Усі права захищені.</p>
+    </footer>
+         
+</body>
+</html>
+        
+   
+
+    

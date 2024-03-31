@@ -1,0 +1,193 @@
+header {
+    width: 100%;
+    color: #0d0d0d;
+  
+    /* Задайте колір тексту за вашим бажанням */
+    padding: 15px;
+  
+    /* Задайте внутрішні відступи за вашим бажанням */
+    margin: 0;
+  
+    /* Обнуліть зовнішні відступи */
+    box-sizing: border-box;
+  }
+  
+  .navigation {
+    width: 100%;
+  }
+  
+  .nav-holder {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    float: right;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 15px;
+  
+    a {
+      text-decoration: none;
+      color: #090909;
+      font-weight: bold;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  h1 {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #7e5b49;
+  
+    /* Колір фону */
+    display: inline-block;
+  
+    /* Забезпечує обрамлення тільки тексту, а не всьої ширини сторінки */
+    padding: 10px;
+  
+    /* Відступи внутрішньої частини елементу */
+  }
+  
+  .foto-ton {
+    display: flex;
+  
+    img {
+      width: 600px;
+  
+      /* Розмір фотографії */
+      height: auto;
+  
+      /* Забезпечення пропорційного зменшення розміру */
+      border-radius: 10px;
+  
+      /* Радіус кутів для створення круглих кутів */
+      margin-right: 10px;
+  
+      /* Додатковий відступ між зображеннями, який можна змінити за потребою */
+    }
+  }
+  
+  .cat {
+    float: right;
+  
+    /* Розміщення справа від тексту */
+    margin-left: 20px;
+  
+    /* Додатковий відступ для вирівнювання тексту */
+  }
+  
+  img {
+    max-width: 100%;
+  
+    /* Максимальна ширина картинки для адаптивності */
+    height: auto;
+  
+    /* Автоматичне збереження пропорцій */
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #333;
+  
+    /* Задайте колір фону за вашим бажанням */
+    color: #fff;
+  
+    /* Задайте колір тексту за вашим бажанням */
+    text-align: center;
+  
+    /* Вирівняйте текст по центру, якщо потрібно */
+    padding: 15px;
+  
+    /* Задайте внутрішні відступи за вашим бажанням */
+    margin: 0;
+  
+    /* Обнуліть зовнішні відступи */
+    box-sizing: border-box;
+  }
+  
+  /* Стилі для великих екранів (більше 768px) та планшетів */
+  
+  @media only screen and (min-width: 768px) {
+    .nav {
+      float: right;
+    }
+  
+    .nav-list {
+      text-align: right;
+    }
+  
+    .nav-item {
+      display: inline-block;
+      margin-right: 15px;
+  
+      a {
+        text-decoration: none;
+        color: #090909;
+        font-weight: bold;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .foto-ton img {
+      width: 600px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  /* Стилі для телефонів (менше 768px) */
+  
+  @media only screen and (max-width: 767px) {
+    .nav {
+      float: none;
+    }
+  
+    .nav-list {
+      text-align: center;
+    }
+  
+    .nav-item {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .foto-ton {
+      flex-direction: column;
+  
+      img {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    .cat {
+      float: none;
+      margin-left: 0;
+    }
+  }
+  

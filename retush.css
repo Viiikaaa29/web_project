@@ -1,0 +1,182 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  color: #0d0d0d;
+  /* Задайте колір тексту за вашим бажанням */
+  padding: 15px;
+  /* Задайте внутрішні відступи за вашим бажанням */
+  margin: 0;
+  /* Обнуліть зовнішні відступи */
+  box-sizing: border-box;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.nav-holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  float: right;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #090909;
+  font-weight: bold;
+}
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-right: 80px;
+  text-align: center;
+  list-style: none;
+}
+
+.foto-retush {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 500px;
+  height: auto;
+}
+
+.text-bl {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.new {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-block p {
+  text-align: left;
+}
+.text-block p:nth-child(2) {
+  text-align: center;
+}
+.text-block p:nth-child(3) {
+  text-align: right;
+}
+
+.naw {
+  text-align: center;
+}
+.naw ul {
+  list-style: none;
+  padding: 0;
+}
+.naw li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.naw li::before {
+  content: "•";
+  /* Код символу крапочки */
+  margin-right: 5px;
+  font-size: 1.2em;
+  /* Розмір крапочки */
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  /* Задайте колір фону за вашим бажанням */
+  color: #fff;
+  /* Задайте колір тексту за вашим бажанням */
+  text-align: center;
+  /* Вирівняйте текст по центру, якщо потрібно */
+  padding: 15px;
+  /* Задайте внутрішні відступи за вашим бажанням */
+  margin: 0;
+  /* Обнуліть зовнішні відступи */
+  box-sizing: border-box;
+}
+
+/* Стилі для телефонів */
+@media only screen and (max-width: 768px) {
+  .nav {
+    float: right;
+  }
+  .nav-list {
+    text-align: right;
+  }
+  .nav-item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .nav-item a {
+    text-decoration: none;
+    color: #090909;
+    font-weight: bold;
+  }
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    margin-right: 0;
+    /* Зменшення відступу на телефонах */
+    text-align: center;
+  }
+  .foto-retush {
+    flex-direction: column;
+    /* Зміна напрямку фото-блоку на стовпчик */
+  }
+  img {
+    width: 100%;
+    /* Збільшення ширини зображення на телефонах */
+    height: auto;
+  }
+  .text-bl {
+    max-width: 100%;
+    /* Збільшення ширини текстового блоку на телефонах */
+  }
+  .new {
+    flex-direction: column;
+    /* Зміна напрямку нового блоку на стовпчик */
+  }
+  .text-block p {
+    text-align: center;
+    /* Зміна вирівнювання тексту на телефонах */
+  }
+  .naw {
+    text-align: left;
+    /* Зміна вирівнювання списку на телефонах */
+  }
+  .naw li {
+    flex-direction: column;
+    /* Зміна напрямку елементів списку на стовпчик */
+  }
+  .naw li::before {
+    content: "";
+    /* Видалення символу крапочки на телефонах */
+    margin-right: 0;
+    font-size: 1em;
+    /* Зменшення розміру тексту на телефонах */
+  }
+}/*# sourceMappingURL=retush.css.map */

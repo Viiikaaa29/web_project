@@ -1,0 +1,138 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  color: #0d0d0d;
+  /* Задайте колір тексту за вашим бажанням */
+  padding: 15px;
+  /* Задайте внутрішні відступи за вашим бажанням */
+  margin: 0;
+  /* Обнуліть зовнішні відступи */
+  box-sizing: border-box;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.nav-holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  float: right;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #090909;
+  font-weight: bold;
+}
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+/* Основні стилі, що залишаються незмінними */
+body {
+  background-image: url("img/bak78.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.registration-form input[type=text], .registration-form input[type=email], .registration-form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.registration-form button[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.registration-form button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.submit-button {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+}
+
+/* Адаптація для телефонів */
+@media only screen and (max-width: 480px) {
+  .nav {
+    float: none;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  .nav-item {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .photo-block img {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+  .table-block {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  .registration-form {
+    width: 100%;
+    padding: 15px;
+  }
+  .registration-form h2 {
+    margin-bottom: 15px;
+  }
+  .registration-form input[type=text], .registration-form input[type=email], .registration-form input[type=password] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .registration-form button[type=submit] {
+    width: 100%;
+  }
+  .footer {
+    padding: 15px;
+  }
+}/*# sourceMappingURL=Registration.css.map */

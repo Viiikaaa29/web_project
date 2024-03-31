@@ -1,0 +1,178 @@
+header {
+    width: 100%;
+    color: #0d0d0d;
+  
+    /* Задайте колір тексту за вашим бажанням */
+    padding: 15px;
+  
+    /* Задайте внутрішні відступи за вашим бажанням */
+    margin: 0;
+  
+    /* Обнуліть зовнішні відступи */
+    box-sizing: border-box;
+  }
+  
+  .navigation {
+    width: 100%;
+  }
+  
+  .nav-holder {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    float: right;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 25px;
+  
+    a {
+      text-decoration: none;
+      color: #090909;
+      font-weight: bold;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  body {
+    background-image: url('img/bak2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    font-style: italic;
+  }
+  
+  .ins {
+    text-align: right;
+    width: 40;
+    height: 40;
+  }
+  
+  .insa a {
+    &:visited {
+      color: green;
+    }
+  
+    &:hover {
+      color: rgb(191, 54, 8);
+    }
+  
+    &:active {
+      color: blue;
+    }
+  }
+  
+  .phone-number {
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  #contact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #close-modal {
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+  }
+  
+  .foto-me {
+    text-align: center;
+  
+    /* Це для вирівнювання фотографій по центру, якщо їхній розмір менший за контейнер */
+  }
+  
+  .left-photo, .right-photo {
+    border: 2px solid #0e0d0d;
+  
+    /* Додаємо рамку для обох фото */
+    border-radius: 10px;
+  
+    /* Закруглюємо кути рамки */
+    margin: 0 10px;
+  
+    /* Додаємо відступи між фотографіями та рамками */
+  }
+  
+  .left-photo {
+    float: left;
+  }
+  
+  .right-photo {
+    float: right;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #333;
+  
+    /* Задайте колір фону за вашим бажанням */
+    color: #fff;
+  
+    /* Задайте колір тексту за вашим бажанням */
+    text-align: center;
+  
+    /* Вирівняйте текст по центру, якщо потрібно */
+    padding: 15px;
+  
+    /* Задайте внутрішні відступи за вашим бажанням */
+    box-sizing: border-box;
+  }
+  
+  main {
+    flex: 1;
+  
+    /* Займає залишений вільний простір, щоб витягнутися до нижнього краю екрану */
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .nav-item a {
+      margin-right: 0;
+    }
+  
+    .left-photo, .right-photo {
+      margin: 0;
+    }
+  }
+  

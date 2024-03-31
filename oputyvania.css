@@ -1,0 +1,121 @@
+body {
+    background-image: url("img/background28.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="datetime-local"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #f10404;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #e80707;
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+#facultyFilterForm {
+    display: flex;
+    text-align: right;
+    border-radius: 40px;
+    margin-bottom: 20px; /* Проміжок між формами */
+}
+
+#interviewFilterForm {
+    width: 23%;
+    margin-right: 1%;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#filterForm {
+    width: 15%;
+    margin-left: 5%;
+    border-radius: 40px;
+    margin-top: -193px; /* Зменшення відступу вгору */
+}
+
+#backBtn {
+    background-color: #f10404;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+
+#backBtn:hover {
+    background-color: #45a049; /* Зелений колір фону при наведенні */
+}
+
+

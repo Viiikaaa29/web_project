@@ -1,0 +1,112 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  color: #0d0d0d;
+  /* Задайте колір тексту за вашим бажанням */
+  padding: 15px;
+  /* Задайте внутрішні відступи за вашим бажанням */
+  margin: 0;
+  /* Обнуліть зовнішні відступи */
+  box-sizing: border-box;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.nav-holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  float: right;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #090909;
+  font-weight: bold;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-right: 80px;
+  text-align: center;
+  list-style: none;
+}
+
+.foto-grad {
+  float: right;
+  /* Розміщення справа від тексту */
+  margin-left: 20px;
+  /* Додатковий відступ для вирівнювання тексту */
+}
+
+img {
+  max-width: 100%;
+  /* Максимальна ширина картинки для адаптивності */
+  height: auto;
+  /* Автоматичне збереження пропорцій */
+}
+
+h2, h3 {
+  text-align: left;
+  color: #be3434;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  /* Задайте колір фону за вашим бажанням */
+  color: #fff;
+  /* Задайте колір тексту за вашим бажанням */
+  text-align: center;
+  /* Вирівняйте текст по центру, якщо потрібно */
+  padding: 15px;
+  /* Задайте внутрішні відступи за вашим бажанням */
+  margin: 0;
+  /* Обнуліть зовнішні відступи */
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    float: none;
+  }
+  .nav-list {
+    text-align: center;
+  }
+  .nav-item {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .foto-grad {
+    float: none;
+    margin-left: 0;
+  }
+  h1 {
+    margin-right: 0;
+  }
+  h2, h3 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=colorokorektion.css.map */

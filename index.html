@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотоблог</title>
+    <link rel="stylesheet" href="indexx.css">
+</head>
+<body>
+
+    <header class="navigation">
+        <div class="nav-holder js-nav">
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="colorokorektion.html">Кольорокорекція</a></li>
+                    <li class="nav-item"><a href="retush.html">Ретушування</a></li>
+                    <li class="nav-item"><a href="tonuvan.html">Тонування</a></li>
+                    <li class="nav-item"><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Мій Фотоблог</h1>
+<div class="rer">
+    <pre>Мій фотоблог - це я. 
+        Фото того, що люблю чи захоплююсь.
+        Від чого можу затамувати подих.
+    </pre>
+</div>
+    <div class="photo-block">
+        <img src="img/photo_2024-03-03_20-53-07.jpg" alt="tree" >
+        <img src="img/photo_2024-03-04_15-52-41.jpg" alt="coffe" >
+        <img src="img/photo_2024-03-04_15-52-44.jpg" alt="hous" >
+        <img src="img/photo_2024-03-04_15-52-51.jpg" alt="sun" >
+    </div>
+    <div class="text-block">
+        <h2>Естетика фотографій</h2>
+        <p><b><mark>Пейзажі-</mark></b>фотографування красивих пейзажів розвиває сприйняття гармонії та природної краси.</p>
+        <p><b><ins>Портрети-</ins></b>естетика зафіксованих виразів облич у натуральних умовах додає душі фотографіям.</p>
+        <p><b><em>Абстракція-</em></b>гра світла, кольору та форм у фотографії допомагає передати почуття та емоції.</p>
+    </div>
+    <div class="table-block">
+        <table border="1">
+            <tr>
+                <th colspan="3">Популярні стилі та теми </th>
+            </tr>
+            <tr>
+                <td>Пейзажі</td>
+                <td>Їжа</td>
+            </tr>
+            <tr>
+                <td>Архітектура</td>
+                <td>Портрети</td>
+            </tr>
+        </table>
+    </div>
+    <div class="photo-ch">
+        <img src="img/photo_2024-03-04_15-52-54.jpg" alt="peisash" >
+        <img src="img/photo_2024-03-04_15-53-21.jpg" alt="food" >
+        <img src="img/photo_2024-03-04_20-03-55.jpg" alt="portret" >
+        <img src="img/photo_2024-03-04_20-05-33.jpg" alt="arx" >
+    </div>
+
+<footer>
+    <p>&copy; 2024 Мій Фотоблог. Усі права захищені.</p>
+    <div class="button-container">
+        <button onclick="window.location.href='registration.html'">Реєстрація</button>
+        <button onclick="window.location.href='tect.html'">Тестування</button>
+        <button onclick="window.location.href='oputyvania.html'">Опитування</button>
+    </div>    
+</footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.querySelector('.menu li:last-child a');
+
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+    function toggleMenu() {
+        var nav = document.querySelector('.js-nav');
+        nav.classList.toggle('nav-open');
+    }
+</script>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Опитування</title>
+<link rel="stylesheet" href="oputyvania.css">
+</head>
+<body>
+    <svg height="1000" width="500">
+        <line x1="120" y1="100" x2="330" y2="100" style="stroke:blue;stroke-width:3" />
+        <line x1="225" y1="100" x2="225" y2="300" style="stroke:blue;stroke-width:2" />
+        <line x1="120" y1="100" x2="120" y2="180" style="stroke:blue;stroke-width:3" />
+        <line x1="330" y1="100" x2="330" y2="180" style="stroke:blue;stroke-width:3" />
+        <path d="M120,180 Q150,270 225,300" fill="none" stroke="blue" stroke-width="3" />
+        <path d="M330,180 Q300,270 225,300" fill="none" stroke="blue" stroke-width="3" />
+    
+    <rect x="250" y="170" width="40" height="40" fill="none" stroke="blue" stroke-width="2" />
+    
+    <text x="264" y="185" text-anchor="middle" font-size="14" fill="blue">1</text>
+    <text x="276" y="185" text-anchor="middle" font-size="14" fill="blue">0</text>
+    <text x="264" y="200" text-anchor="middle" font-size="14" fill="blue">0</text>
+    <text x="276" y="200" text-anchor="middle" font-size="14" fill="blue">1</text>
+    
+    <line x1="257" y1="165" x2="257" y2="155" style="stroke:blue;stroke-width:2" />
+    <line x1="265" y1="165" x2="265" y2="155" style="stroke:blue;stroke-width:2" />
+    <line x1="273" y1="165" x2="273" y2="155" style="stroke:blue;stroke-width:2" />
+    <line x1="281" y1="165" x2="281" y2="155" style="stroke:blue;stroke-width:2" />
+    
+    <line x1="257" y1="215" x2="257" y2="225" style="stroke:blue;stroke-width:2" />
+    <line x1="265" y1="215" x2="265" y2="225" style="stroke:blue;stroke-width:2" />
+    <line x1="273" y1="215" x2="273" y2="225" style="stroke:blue;stroke-width:2" />
+    <line x1="281" y1="215" x2="281" y2="225" style="stroke:blue;stroke-width:2" />
+    
+    <line x1="245" y1="177" x2="235" y2="177" style="stroke:blue;stroke-width:2" />
+    <line x1="245" y1="185" x2="235" y2="185" style="stroke:blue;stroke-width:2" />
+    <line x1="245" y1="193" x2="235" y2="193" style="stroke:blue;stroke-width:2" />
+    <line x1="245" y1="201" x2="235" y2="201" style="stroke:blue;stroke-width:2" />
+    
+    <line x1="297" y1="177" x2="307" y2="177" style="stroke:blue;stroke-width:2" />
+    <line x1="297" y1="185" x2="307" y2="185" style="stroke:blue;stroke-width:2" />
+    <line x1="297" y1="193" x2="307" y2="193" style="stroke:blue;stroke-width:2" />
+    <line x1="297" y1="201" x2="307" y2="201" style="stroke:blue;stroke-width:2" />
+           
+    <line x1="150" y1="155" x2="150" y2="165" style="stroke:blue;stroke-width:3" />
+    <polyline points="128,155 128,158 130,160 170,160 172,158 172,155 " style="fill:none;stroke:blue;stroke-width:3" />
+    
+    <line x1="125" y1="153" x2="131" y2="153" style="stroke:blue;stroke-width:2" />
+    <line x1="147" y1="153" x2="153" y2="153" style="stroke:blue;stroke-width:2" />
+    <line x1="169" y1="153" x2="175" y2="153" style="stroke:blue;stroke-width:2" />
+
+    <polygon points="126,151 126,148 127,146 127,143 129" fill="blue" />
+</svg>
+    <h1>Опитування</h1>
+
+    <form id="surveyForm">
+
+    <label for="password">Введіть ПІБ:</label><br>
+    <input type="text" id="text" name="text"><br><br>
+
+
+    <label for="faculty">На якому факультеті ви навчаєтесь:</label>
+    <select id="faculty" name="faculty">
+        <option value="faculty1">Філологічний</option>
+        <option value="faculty2">Електроніки</option>
+        <option value="faculty3">Фізичний</option>
+    </select><br>
+
+    <label>Виберіть потік на якому ви навчаєтесь:</label><br>
+    <input type="radio" id="stream1" name="stream" value="stream1">
+    <label for="stream1">Потік 1</label><br>
+    <input type="radio" id="stream2" name="stream" value="stream2">
+    <label for="stream2">Потік 2</label><br>
+    <input type="radio" id="stream3" name="stream" value="stream3">
+    <label for="stream3">Потік 3</label><br>
+
+    <label>Вкажіть групу:</label><br>
+    <input type="checkbox" id="group1" name="group[]" value="group1">
+    <label for="group1">Група 1</label><br>
+    <input type="checkbox" id="group2" name="group[]" value="group2">
+    <label for="group2">Група 2</label><br>
+    <input type="checkbox" id="group3" name="group[]" value="group3">
+    <label for="group3">Група 3</label><br>
+    <input type="checkbox" id="group4" name="group[]" value="group4">
+    <label for="group4">Група 4</label><br>
+
+    <label for="interview-time">Виберіть зручний час для проходження співбесіди:</label><br>
+    <input type="datetime-local" id="interview-time" name="interview-time"><br>
+
+    <label for="average-grade">Вкажіть середній бал:</label><br>
+    <input type="number" id="average-grade" name="average-grade" min="0" max="100"><br>
+
+    <label for="feedback">Коментарі:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+    <label for="color">Виберіть ваш улюблений колір:</label><br>
+    <input type="color" id="color" name="color"><br><br>
+    
+    <label>Виберіть ваш статус:</label><br>
+    <input type="radio" id="status_student" name="status" value="student">
+    <label for="status_student">Студент</label><br>
+    <input type="radio" id="status_staff" name="status" value="staff">
+    <label for="status_staff">Викладач</label><br>
+    <input type="radio" id="status_other" name="status" value="other">
+    <label for="status_other">Інше</label><br><br>
+    
+    <label for="file_upload">Завантажте свій файл:</label><br>
+    <input type="file" id="file_upload" name="file_upload"><br><br>
+
+    
+    <input type="submit" value="Відправити">
+    <button id="filterButtonFaculty">Фільтрувати за факультетом</button>
+<select id="facultyFilter">
+    <option value="faculty1">Філологічний</option>
+    <option value="faculty2">Електроніки</option>
+    <option value="faculty3">Фізичний</option>
+</select>
+
+<button id="filterButtonDateTime">Фільтрувати за датою та часом</button>
+<input type="datetime-local" id="datetimeFilter">
+
+<button id="filterButtonAverageGrade">Фільтрувати за середнім балом</button>
+<button id="backBtn">Повернутися назад</button> <!-- Додана кнопка "Повернутися назад" -->
+
+<ul id="resultContainer"></ul>
+ 
+</form>
+
+<script>
+    const form = document.getElementById('surveyForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(form);
+        const data = {};
+        for (const [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+
+        // Збереження даних в localStorage
+        const surveys = JSON.parse(localStorage.getItem('surveys')) || [];
+        surveys.push(data);
+        localStorage.setItem('surveys', JSON.stringify(surveys));
+
+        // Очистка форми після відправки
+        form.reset();
+    });
+
+    // Доданий скрипт для виконання фільтрації за факультетом
+    document.getElementById('filterButtonFaculty').addEventListener('click', function() {
+        const facultyFilter = document.getElementById('facultyFilter').value;
+        
+        // Отримання опитувань з localStorage
+        const surveys = JSON.parse(localStorage.getItem('surveys')) || [];
+        
+        // Фільтрація учасників опитування за факультетом
+        const filteredSurveys = surveys.filter(survey => {
+            return survey['faculty'] === facultyFilter;
+        });
+
+        // Виведення результатів на сторінку
+        displayResults(filteredSurveys);
+    });
+
+    // Доданий скрипт для виконання фільтрації за датою та часом співбесіди
+    document.getElementById('filterButtonDateTime').addEventListener('click', function() {
+        const datetimeFilter = new Date(document.getElementById('datetimeFilter').value).getTime();
+        
+        // Отримання опитувань з localStorage
+        const surveys = JSON.parse(localStorage.getItem('surveys')) || [];
+        
+        // Фільтрація учасників опитування за датою та часом співбесіди
+        const filteredSurveys = surveys.filter(survey => {
+            const surveyDatetime = new Date(survey['interview-time']).getTime();
+            return surveyDatetime === datetimeFilter;
+        });
+
+        // Виведення результатів на сторінку
+        displayResults(filteredSurveys);
+    });
+
+    // Доданий скрипт для виконання фільтрації за середнім балом
+    document.getElementById('filterButtonAverageGrade').addEventListener('click', function() {
+        const minGrade = 3;
+        const maxGrade = 4;
+        
+        // Отримання опитувань з localStorage
+        const surveys = JSON.parse(localStorage.getItem('surveys')) || [];
+        
+        // Фільтрація учасників опитування за середнім балом
+        const filteredSurveys = surveys.filter(survey => {
+            const averageGrade = parseFloat(survey['average-grade']);
+            return averageGrade >= minGrade && averageGrade <= maxGrade;
+        });
+
+        // Виведення результатів на сторінку5
+        displayResults(filteredSurveys);
+    });
+
+    // Функція для відображення результатів фільтрації на сторінці
+    function displayResults(filteredSurveys) {
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML = ''; // Очищення контейнера перед відображенням нових результатів
+
+        if (filteredSurveys.length === 0) {
+            resultContainer.innerText = 'Немає результатів для відображення';
+        } else {
+            filteredSurveys.forEach(survey => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `ПІБ: ${survey['text']}, Факультет: ${survey['faculty']}, Дата та час співбесіди: ${survey['interview-time']}, Середній бал: ${survey['average-grade']}`;
+                resultContainer.appendChild(listItem);
+            });
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+          const backBtn = document.getElementById('backBtn');
+        
+          backBtn.addEventListener('click', function() {
+            window.location.href = 'index.html';
+          });
+        });
+</script>
+
+
+
+
+</body>
+</html>
